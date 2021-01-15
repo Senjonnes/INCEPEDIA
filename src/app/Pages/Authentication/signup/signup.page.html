@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
+<ion-header class="text-white" mode="ios">
+  <ion-toolbar class="h7 pt-30 app-header-bg">
+    <ion-buttons slot="start">
+      <ion-button class="mtt-02 no-transform border-width-0" fill="clear" color="light" [disabled]="pressedOnce" (click)="back()">
+        <ion-icon slot="start" name="arrow-back" class="arrow"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-white no-padding p-0">
+      <div class="text-primary text1 fw700">THE INCEPEDIA</div>
+    </ion-title>
+    <ion-buttons slot="primary">
+    </ion-buttons>
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content>
+<ion-content class="app-bg">
+  <div class="parent">
+
+    <div class="w100 px-10">
+      <ion-grid>
+        <ion-row>
+          <div class="text1 w100">
+
+            <div class="text-primary text12 fw700 item-v-center pb-10">Please create an account</div>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary item-space-between">
+              <ion-input color="primary" type="text" class="pl-10 py-05" placeholder="First Name" ></ion-input>
+              <ion-input color="primary" type="text" class="pl-10 py-05" placeholder="Last Name" ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary">
+              <ion-input color="primary" type="text" class="pl-10 py-05" placeholder="Name of school" ></ion-input>
+              <span>Optional</span>
+            </ion-item>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary">
+              <ion-input color="primary" type="text" class="pl-10 py-05" placeholder="Phone no." ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary">
+              <ion-input color="primary" type="email" class="pl-10 py-05" placeholder="Email" ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary">
+              <ion-input color="primary" type="password" class="pl-10 py-05" placeholder="Password" ></ion-input>
+            </ion-item>
+
+            <ion-item lines="none" class="animated fadeInUp ion-no-padding inputConfig2 ion-margin-vertical outline-primary">
+              <ion-input color="primary" type="confirm_password" class="pl-10 py-05" placeholder="Confirm Password" ></ion-input>
+            </ion-item>
+
+            <div class="text-center text08 lh-15 text-primary">By creating an account you agree to our<br>Terms of Service and Privacy Policy</div>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div style="margin-top: 15%;">
+      <ion-button  class="no-transform button-primary-sharp" fill="clear" expand="block" (click)="back()">CONTINUE</ion-button>
+    </div>
+    <div class="socialMedia">
+      <div class="text-primary pr-10 text-slant">Or sign up with</div>
+      <div><img class="pr-10" src='assets/icon/google-plus-p.svg' /></div>
+      <div><img src='assets/icon/linkedin-logo-g.svg' /></div>
+    </div>
+  </div>
 
 </ion-content>

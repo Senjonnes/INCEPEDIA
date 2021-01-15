@@ -21,7 +21,7 @@
     <div class="w100 px-10">
       <ion-grid>
         <ion-row>
-          <div class="px-02 text1 w100 loginContainer">
+          <div class="text1 w100 loginContainer">
 
             <div class="text-white text12 fw700 item-v-center py-15">Sign in</div>
 
@@ -56,8 +56,11 @@
           </div>
           
           <div class="px-02 text1 w100">
-            <div class="mt-40">
-              <ion-button  class="no-transform button-primary" fill="clear" expand="block" (click)="login()">Log In</ion-button>
+            <div class="mt-40 item-space-around px-10">
+              <div>No account yet?</div>
+              <div>
+                <ion-button  class="no-transform button-primary-sharp" fill="clear" expand="block" [routerLink]="['/signup']">Sign up</ion-button>
+              </div>
             </div>
           </div>
         </ion-row>

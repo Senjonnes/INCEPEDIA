@@ -836,6 +836,15 @@ a {
     border-radius: 16px;
     color: var(--ion-color-primary);
     height: 45px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+.button-primary-sharp {
+    background: var(--ion-color-primary);
+    border-radius: 3px;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
 }
 
 .button-white {
@@ -852,6 +861,10 @@ a {
 
 .outline-dafault {
     border: 1px solid rgb(204, 204, 204);
+}
+
+.outline-primary {
+    border: 1px solid var(--ion-color-primary)!important;
 }
 
 .d-flex {
@@ -1054,7 +1067,9 @@ a {
     height: 50px;
 }
 
-
+.text-slant {
+    font-style: italic;
+}
 
 
 
@@ -1192,4 +1207,16 @@ a {
     background: #ffffff;
     border-radius: 16px;
     font-size: 0.8rem;
+}
+
+.inputConfig2 {
+    height: 3rem;
+    color: var(--ion-color-primary);
+    display: flex;
+    background: #ffffff;
+    font-size: 0.8rem;
+}
+
+.lh-15 {
+    line-height: 1.5rem;
 }
