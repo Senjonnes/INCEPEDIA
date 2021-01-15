@@ -1,0 +1,7 @@
+{
+  "name": "INCPEDIA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
