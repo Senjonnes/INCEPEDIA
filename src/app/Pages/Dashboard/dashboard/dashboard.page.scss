@@ -1,0 +1,54 @@
+ion-content {
+    --background: var(--ion-color-primary)!important;
+    position: relative;
+}
+
+.menu-container {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ion-item {
+    --background: none;
+    --padding: none;
+}
+
+.button-container {
+    border-radius: 13px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container-with-bg {
+    padding: 5px 5px;
+    background: #fff !important;
+    border-radius: 13px;
+    margin-bottom: 30px;
+}
+
+.logout {
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.button-logout {
+    background: var(--ion-color-secondary);
+    color: #ffffff;
+    height: 45px;
+    width: 100%;
+    margin: 0px;
+}
+
+.img-style {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.menu-name {
+    position: relative;
+}

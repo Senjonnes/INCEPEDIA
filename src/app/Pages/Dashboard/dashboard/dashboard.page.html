@@ -1,0 +1,27 @@
+<ion-split-pane contentId="dashboard">
+  <ion-menu side="start" disabled="false" menuId="dashboard-menu" contentId="dashboard">
+    <ion-content>
+      <ion-grid class="menu-container ion-margin-bottom">
+        <ion-row>
+          <ion-col size="12">
+            <div class="item-v-center">
+              <img src="assets/icon/person.jpg" class="img-style"/>
+            </div>
+            <div class="item-v-center fw700 text-white pt-10 pb-20 text1">Isah Femi Chucks <img src="assets/icon/edit.svg" style="height: 18px;" class="ml-10" /></div>
+            <ng-container *ngFor="let m of menu">
+              <!-- <div (click)="toggleMenu(m)" [ngClass]="m.name === 'Home' ? 'button-container-with-bg' : 'button-container'"> -->
+              <div (click)="toggleMenu(m)" class="button-container">
+                <div class="text-white text1 menu-name">{{m.name}} 
+                  <img *ngIf="m.id === '1'" src="assets/icon/search.svg" style="height: 18px;position: absolute; right: -50%; top: 15%;" class="ml-10" />
+                  <small *ngIf="m.id === '7'" style="position: absolute;top: 20%;right: -200%;"><i class="text-secondary">available</i></small>
+                </div>
+              </div>
+            </ng-container>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-button  class="no-transform logout button-logout" fill="clear" expand="block" [routerLink]="['/login']">Logout</ion-button>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="dashboard"></ion-router-outlet>
+</ion-split-pane>
