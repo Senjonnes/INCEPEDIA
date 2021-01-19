@@ -6,4 +6,116 @@ ion-content {
 .parent {
     height: 100%;
     width: 100%;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.background-primary {
+    --background: var(--ion-color-primary);
+    background: var(--ion-color-primary);;
+}
+
+.no-border {
+    border-width: 0px!important;
+    --border-width: 0px!important;
+}
+
+.toggler {
+    background: #67817b;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10px;
+}
+
+.header-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-profile-btn {
+    background: var(--ion-color-secondary);
+    border-radius: 5px;
+    color: var(--ion-color-primary);
+    height: 24px;
+    font-size: 0.6rem;
+}
+
+.view-course-btn {
+    background: var(--ion-color-primary);
+    border-radius: 8px;
+    color: var(--ion-color-secondary);
+    height: 40px;
+    font-size: 0.8rem;
+    width: 40%;
+    position: absolute;
+    right: 12%;
+    bottom: 8%;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+}
+
+#tv{
+    background-color: var(--ion-color-primary);
+    border-radius: 200%;
+    top: -23%;
+    position: absolute;
+    width: 100%;
+    height: 48%;
+}
+
+.sub-parent {
+    background: var(--ion-color-secondary);
+    height: 10rem;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5%;
+    padding: 8% 12%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.sub-item {
+    height: 5rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .image-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        .image_ {
+            height: 100%;
+            width: 5rem;
+            background: red;
+            border-radius: 16px;
+        }
+    }
+}
+
+.scroll {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 12rem;
+}
+
+.bg-light-blue {
+    background: #E0E2FF;
+}
+
+.bg-light-green {
+    background: #E0FFED;
+}
+
+.bg-light-red {
+    background: #FFE0EA;
 }

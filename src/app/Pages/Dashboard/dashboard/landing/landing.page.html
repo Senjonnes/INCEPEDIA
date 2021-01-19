@@ -1,23 +1,99 @@
-<ion-header class="text-white" mode="ios">
-  <ion-toolbar class="h7 pl-05 pt-30 app-header-bg">
-    <ion-buttons slot="start">
-      <ion-button class="mtt-02 no-transform border-width-0" fill="clear" color="light" (click)="toggleMenu()">
-        <img src="../../assets/icon/align-right.svg" class="text12 pr-10">
-      </ion-button>
-    </ion-buttons>
+<ion-header class="text-white background-primary" mode="ios">
+  <ion-toolbar class="h5 px-05 pt-20 background-primary no-border">
+    <ion-buttons slot="start"></ion-buttons>
     <ion-title class="text-white no-padding">
       <div class="title header-text"></div>
     </ion-title>
     <ion-buttons slot="primary">
-      <img src="../../assets/icon/addosse.svg" class="text12 pr-10">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" (click)="toggleMenu()">
+        <ion-icon class="harmbuger" name="menu-outline"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
-
+  <div class="px-10 tv2">
+    <div class="header-image">
+      <img src="assets/icon/undraw_researching_22gp.svg" />
+    </div>
+    <div class="px-10 text-white">
+      <div class="text15 text-white pb-05">Welcome back</div>
+      <div class="user-name">
+        <div class="text-white text15 pr-05">
+          Isah!
+        </div>
+        <ion-button  class="no-transform view-profile-btn" fill="clear" expand="block">View profile</ion-button>
+      </div>
+      <div class="pt-10">
+        <ion-item lines="none" class="animated fadeInUp ion-no-padding ion-margin-top outline-dafault inputConfig3">
+          <ion-label class="icon-bg pl-10"><ion-icon src="assets/icon/search - primary.svg" item-start class="text1"></ion-icon></ion-label>
+          <ion-input color="primary" type="text" class="pl-02 py-05" placeholder="Search" ></ion-input>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+  
 </ion-header>
 
 <ion-content class="app-bg-white">
+  <div id="tv"></div>
   <div class="parent">
-    
+    <div class="sub-parent">
+      Start learning new skills
+      <ion-button  class="no-transform view-course-btn" fill="clear" expand="block">view course <ion-icon class="text1 ml-05" src="assets/icon/arrow-pointing-to-right.svg"></ion-icon></ion-button>
+    </div>
+    <div class="scroll" scrollY="true">
+      <div class="text-primary py-05">Popular</div>
+      
+      <div class="sub-item bg-light-blue">
+        <div class="image-container">
+          <div class="image_"><img class="w100 h100" src="assets/icon/web-design.png" /></div>
+          <div class="text-center pl-10">
+            <div class="fw700 text-primary">Web design</div>
+            <div class="text06 text-primary">120hrs</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <div>
+            <div><ion-icon class="text15" src="assets/icon/add-square-button.svg"></ion-icon></div>
+            <div class="text06 text-primary fw700">N5,000.00</div>
+            <div class="text06 text-primary fw700">N100.00</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item bg-light-green">
+        <div class="image-container">
+          <div class="image_"><img class="w100 h100" src="assets/icon/web-design.png" /></div>
+          <div class="text-center pl-10">
+            <div class="fw700 text-primary">Web design</div>
+            <div class="text06 text-primary">120hrs</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <div>
+            <div><ion-icon class="text15" src="assets/icon/add-square-button.svg"></ion-icon></div>
+            <div class="text06 text-primary fw700">N5,000.00</div>
+            <div class="text06 text-primary fw700">N100.00</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item bg-light-red">
+        <div class="image-container">
+          <div class="image_"><img class="w100 h100" src="assets/icon/math.png" /></div>
+          <div class="text-center pl-10">
+            <div class="fw700 text-primary">Web design</div>
+            <div class="text06 text-primary">120hrs</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <div>
+            <div><ion-icon class="text15" src="assets/icon/add-square-button.svg"></ion-icon></div>
+            <div class="text06 text-primary fw700">N5,000.00</div>
+            <div class="text06 text-primary fw700">N100.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </div>
 

@@ -905,6 +905,11 @@ a {
     --border-width: 0px!important;
 }
 
+.harmbuger {
+    --color: #ffffff;
+    color: #ffffff;
+}
+
 
 .space-item-between {
   display: flex;
@@ -1206,6 +1211,15 @@ a {
     display: flex;
     background: #ffffff;
     border-radius: 16px;
+    font-size: 0.8rem;
+}
+
+.inputConfig3 {
+    height: 3rem;
+    color: var(--ion-color-primary);
+    display: flex;
+    background: #ffffff;
+    border-radius: 24px;
     font-size: 0.8rem;
 }
 
