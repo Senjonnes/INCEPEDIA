@@ -847,6 +847,14 @@ a {
     box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
 }
 
+.button-primary-sharp_ {
+    background: var(--ion-color-primary);
+    border-radius: 10px;
+    color: #ffffff;
+    height: 45px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
+}
+
 .button-white {
     background: #ffffff;
     border-radius: 5px;
@@ -1229,6 +1237,15 @@ a {
     display: flex;
     background: #ffffff;
     font-size: 0.8rem;
+}
+
+.inputConfig4 {
+    height: 3rem;
+    color: var(--ion-color-primary);
+    display: flex;
+    background: #ffffff;
+    font-size: 0.8rem;
+    border-radius: 4px;
 }
 
 .lh-15 {

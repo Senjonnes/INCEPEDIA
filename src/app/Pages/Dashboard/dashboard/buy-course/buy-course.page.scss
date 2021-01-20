@@ -1,0 +1,147 @@
+ion-content {
+    --overflow: hidden;
+    display: grid;
+    --background: var(--ion-color-primary);
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    background: #ffffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.make-payment {
+    padding: 20% 0;
+}
+
+.background-primary {
+    --background: var(--ion-color-primary);
+    background: var(--ion-color-primary);;
+}
+
+.no-border {
+    border-width: 0px!important;
+    --border-width: 0px!important;
+}
+
+.toggler {
+    background: #67817b;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 10px;
+}
+
+.view-course-btn {
+    background: var(--ion-color-primary);
+    border-radius: 8px;
+    color: var(--ion-color-secondary);
+    height: 40px;
+    font-size: 0.8rem;
+    width: 40%;
+    position: absolute;
+    right: 12%;
+    bottom: 8%;
+}
+
+.sub-parent {
+    width: 100%;
+    position: relative;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    .sub-bar {
+        height: 6px;
+        width: 30%;
+        background: #EEEEEE;
+        border-radius: 10px;
+    }
+}
+
+.sub-item {
+    height: 7rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--ion-color-primary);
+    padding: 5% 8%;
+    position: relative;
+
+    .image-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        .triangle-topright {
+            content: "";
+            width: 2em;
+            height: 2em;
+            clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+            -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+            background-color:  var(--ion-color-secondary);
+            border-radius: 0 14px 0 0;
+            position: relative;
+            .check-marker {
+                --color: #ffffff;
+                color: #ffffff;
+                right: 5%;
+                top: 5%;
+                position: absolute;
+            }
+        }
+    }
+
+}
+
+.sub-item2 {
+    height: 7rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px dashed #D5D5D5;
+    padding: 5% 8%;
+    position: relative;
+
+    .image-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+}
+
+.scroll {
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+
+.existing-card {
+    text-align: center;
+    .card-dropdown {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #D5D5D5;
+        padding: 0.8rem 1.8rem;
+        align-items: center;
+        border-radius: 12px;
+        .card-type {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

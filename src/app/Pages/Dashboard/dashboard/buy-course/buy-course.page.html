@@ -1,0 +1,80 @@
+<ion-header class="text-white background-primary" mode="ios">
+  <ion-toolbar class="h5 px-05 pt-20 background-primary no-border">
+    <ion-buttons slot="start">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" [disabled]="pressedOnce" (click)="back()">
+        <ion-icon class="harmbuger" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-white no-padding">
+      <div class="title header-text"></div>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" (click)="toggleMenu()">
+        <ion-icon class="harmbuger" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="px-10 tv2">
+    <div class="px-10 text-white">
+      <div class="text20 fw700 text-white make-payment text-center">Make Payment</div>
+    </div>
+  </div>
+  
+</ion-header>
+
+<ion-content>
+  <div class="parent">
+    <div class="sub-parent">
+      <div class="sub-bar"></div>
+    </div>
+    <div class="scroll" scrollY="true">
+      
+      <div class="sub-item">
+        <div class="image-container">
+          <div>
+            <div class="fw700 text12 text-primary">Web design</div>
+            <div class="text-primary">Full Course</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <div class="text-primary text15">₦ 100.00</div>
+        </div>
+        <div class="triangle">
+          <div class="triangle-topright">
+            <ion-icon class="check-marker" name="checkmark"></ion-icon>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item2">
+        <div class="image-container">
+          <div>
+            <div class="fw700 text12 text-primary">Add card</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <ion-icon class="text15" src="assets/icon/add.svg"></ion-icon>
+        </div>  
+      </div>
+      
+      <div class="existing-card">
+        <div class="text-primary">Use existing cards</div>
+        <div class="card-dropdown">
+          <div class="card-type">
+            <div class="item-v-center"><ion-icon class="text12 pr-10" src="assets/icon/visa.svg"></ion-icon></div>
+            <div class="fw700 text-primary">Visa Card *079</div>
+          </div>
+          <div class="item-v-center"><ion-icon class="text12 text-primary" name="chevron-down"></ion-icon></div>
+        </div>
+        <div class="text-primary text08 mt-10">Terms & Conditions</div>
+
+        <div style="margin-top: 20%;">
+          <ion-button [routerLink]="['add-card']" class="no-transform button-primary-sharp_" fill="clear" expand="block">Continue with payment <ion-icon class="text1 ml-10" src="assets/icon/arrow-pointing-to-right - white.svg"></ion-icon></ion-button>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+</ion-content>
