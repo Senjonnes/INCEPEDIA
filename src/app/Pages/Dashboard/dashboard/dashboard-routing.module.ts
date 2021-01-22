@@ -16,6 +16,10 @@ const routes: Routes = [
         path: 'buy-course',
         loadChildren: () => import('../../../Pages/Dashboard/dashboard/buy-course/buy-course.module').then( m => m.BuyCoursePageModule)
       },
+      {
+        path: 'my-course',
+        loadChildren: () => import('../../../Pages/Dashboard/dashboard/my-course/my-course.module').then( m => m.MyCoursePageModule)
+      },
     ]
   },
 ];

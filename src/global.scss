@@ -867,6 +867,14 @@ a {
     box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
 }
 
+.button-primary-sharp2 {
+    background: var(--ion-color-primary);
+    border-radius: 10px;
+    color: #ffffff;
+    height: 54px;
+    box-shadow: 0px 0px 2px 1px var(--ion-color-primary);
+}
+
 .button-white {
     background: #ffffff;
     border-radius: 5px;
@@ -894,6 +902,11 @@ a {
 .arrow {
     color: #254A42;
     font-size: 1.5em;
+}
+
+.icon-red {
+  color: #F18C8E;
+  --color: #F18C8E;
 }
 
 .bg-none {
@@ -1262,4 +1275,11 @@ a {
 
 .lh-15 {
     line-height: 1.5rem;
+}
+
+.btn-icon_ {
+  position: absolute;
+  right: 5%;
+  --color: #ffffff!important;
+  color: #ffffff!important;
 }

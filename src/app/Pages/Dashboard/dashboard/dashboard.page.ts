@@ -51,7 +51,7 @@ export class DashboardPage implements OnInit {
         id: "1", name: "Find a course", url: ""
       },
       {
-        id: "2", name: "My courses", url: ""
+        id: "2", name: "My courses", url: "/dashboard/my-course"
       },
       {
         id: "3", name: "Library", url: ""

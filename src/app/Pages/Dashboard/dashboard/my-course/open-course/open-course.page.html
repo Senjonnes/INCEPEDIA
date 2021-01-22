@@ -1,0 +1,139 @@
+<ion-header class="text-white background-primary" mode="ios">
+  <ion-toolbar class="h5 px-05 pt-20 background-primary no-border">
+    <ion-buttons slot="start">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" [disabled]="pressedOnce" (click)="back()">
+        <ion-icon class="harmbuger" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-white no-padding">
+      <div class="title header-text"></div>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" (click)="toggleMenu()">
+        <ion-icon class="harmbuger" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="px-10 tv2">
+    <div class="px-10 text-white">
+      <div>
+        <div class="image-frame"><img src="assets/icon/web-design.png" style="height: 2.5rem;" /></div>
+        <div class="text20 fw700 text-white make-payment text-center">Web Design Full Stack</div>
+      </div>
+    </div>
+  </div>
+  
+</ion-header>
+
+<ion-content>
+  <div class="parent">
+    <div class="sub-parent">
+      <div class="sub-bar"></div>
+    </div>
+
+    <div class="sub-item-header">
+      <div class="image-container">
+        <div class="owner">
+          <img src="assets/icon/person.jpg" class="h100 w100" style="border-radius: 50%;" />
+        </div>
+        <div class="pl-10">
+          <div class="text1 fw700 text-primary">Boluwatife John</div>
+          <div class="text08 text-secondary">Author, Web design</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll" scrollY="true">  
+      <div class="sub-item">
+        <div class="connector br_g_1"></div>
+        <div class="image-container">
+          <div class="marker b_g_1">1</div>
+          <div class="pl-10">
+            <div class="text1 fw700 text-primary">Web design</div>
+            <div class="text08" style="color: #F18C8E;">2 hours 20 minutes</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">25%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item">
+        <div class="connector br_g_2"></div>
+        <div class="image-container">
+          <div class="marker b_g_2">3</div>
+          <div class="pl-10">
+            <div class="text1 fw700 text-primary">Design Tools</div>
+            <div class="text08" style="color: #F18C8E;">1 hours 35 minutes</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">50%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item">
+        <div class="connector br_g_3"></div>
+        <div class="image-container">
+          <div class="marker b_g_3">3</div>
+          <div class="pl-10">
+            <div class="text1 fw700 text-primary">Prototyping Tools</div>
+            <div class="text08" style="color: #F18C8E;">0 hours 57 minutes</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">0%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item">
+        <div class="connector br_g_4"></div>
+        <div class="image-container">
+          <div class="marker b_g_4">4</div>
+          <div class="pl-10">
+            <div class="text1 fw700 text-primary">Summary & Exercise</div>
+            <div class="text08" style="color: #F18C8E;">3 hours 12 minutes</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">0%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub-item">
+        <div class="connector br_g_5"></div>
+        <div class="image-container">
+          <div class="marker b_g_5">5</div>
+          <div class="pl-10">
+            <div class="text1 fw700 text-primary">Coclusion</div>
+            <div class="text08" style="color: #F18C8E;">0 hours 30 minutes</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">0%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="buttom-btn">
+      <ion-button class="no-transform button-primary-sharp2" fill="clear" expand="block">Add new course <ion-icon class="text1 btn-icon_" src="assets/icon/arrow-pointing-to-right - white.svg"></ion-icon></ion-button>
+    </div>
+    
+  </div>
+
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header class="text-white background-primary" mode="ios">
+  <ion-toolbar class="h5 px-05 pt-20 background-primary no-border">
+    <ion-buttons slot="start">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" [disabled]="pressedOnce" (click)="back()">
+        <ion-icon class="harmbuger" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-white no-padding">
+      <div class="title header-text"></div>
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button class="mtt-02 no-transform border-width-0 toggler" fill="clear" color="light" (click)="toggleMenu()">
+        <ion-icon class="harmbuger" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <div class="px-10 tv2">
+    <div class="px-10 text-white">
+      <div class="text20 fw700 text-white make-payment text-center">My Course</div>
+    </div>
+  </div>
+  
+</ion-header>
+
+<ion-content>
+  <div class="parent">
+    <div class="sub-parent">
+      <div class="sub-bar"></div>
+    </div>
+    <div class="scroll" scrollY="true">
+      
+      <div class="sub-item bg-light-blue">
+        <div class="image-container">
+          <div class="image_"><img class="w100 h100" src="assets/icon/web-design.png" /></div>
+          <div class="text-center pl-10">
+            <div class="fw700 text-primary">Web design</div>
+            <div class="text06 text-primary">90 hours remaining</div>
+          </div>
+        </div>
+        <div class="text-center item-v-center px-10">
+          <div class="remiander">
+            <div class="text08 text-primary fw700 pr-05">25%</div>
+            <div class="play-btn" [routerLink]="['open-course']"><ion-icon class="text1 icon-red" name="caret-forward"></ion-icon></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="buttom-btn">
+      <ion-button class="no-transform button-primary-sharp2" fill="clear" expand="block">Add new course <ion-icon class="text1 btn-icon_" src="assets/icon/add2.svg"></ion-icon></ion-button>
+    </div>
+    
+  </div>
+
+</ion-content>
